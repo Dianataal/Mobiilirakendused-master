@@ -1,3 +1,9 @@
 cd ios
 nom install react-native-safe-area-context
 pod install
+
+back.png
+search.png
+logout.png
+LISA NEED
+

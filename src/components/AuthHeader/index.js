@@ -1,16 +1,15 @@
 import React from "react";
-import { Pressable, Image, Text, View } from react-NativeAppEventEmitter;
+import { Pressable, Image, Text, View } from "react-native";
 import { styles } from "./styles";
 
 const AuthHeader = ({title, onBackPress}) => {
     return (
         <View style={styles.container}>
             <Pressable hitSlop={20} onPress={onBackPress}>
-                <Image style={styles.image} source={require('../../assents/auth_back.png')}/>
+                <Image style= {styles.image} source={require('../../assets/auth_back.png')}></Image>
             </Pressable>
             <Text style={styles.title}>{title}</Text>
         </View>
     )
 }
-
-export default AuthHeader;
+export default React.memo(AuthHeader)

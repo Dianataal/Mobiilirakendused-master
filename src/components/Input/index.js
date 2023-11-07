@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TextInput, View, Text, Pressable } from "react-native";
+import { TextInput, View, Text, Image, Pressable } from "react-native";
 import { styles } from "./styles";
 
 const Input = ({label, placeholder, isPassword}) => {

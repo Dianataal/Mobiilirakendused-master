@@ -39,6 +39,7 @@ export const styles = StyleSheet.create({
 
     },
     button: {
+        marginTop: 40,
         marginVertical: 20
     },
     footerText: {

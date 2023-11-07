@@ -1,17 +1,14 @@
 import React from "react";
-import { TouchableOpacity, Text } from "react-native";
+import { Pressable, Text, Touchable, TouchableOpacity } from "react-native";
 
-import { styles } from '.styles';
+import { styles } from "./styles";
 
-const Button = ({title, onPress}) => {
-    const handlePress = () => {
-        console.log('button is clicked')
-    }
+const Button = ({title, onPress, style}) => {
 
-    return (
-        <TouchableOpacity activeOpacity={0.6} onPress={onPress} style={styles.container}>
+    return(
+        <TouchableOpacity activeOpacity={0.6} onPress={onPress} style={[styles.container, style]}>
             <Text style={styles.title}>{title}</Text>
         </TouchableOpacity>
     )
 }
-export default Button;
+export default Button

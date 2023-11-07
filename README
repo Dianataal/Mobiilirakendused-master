@@ -1,0 +1,3 @@
+cd ios
+nom install react-native-safe-area-context
+pod install
